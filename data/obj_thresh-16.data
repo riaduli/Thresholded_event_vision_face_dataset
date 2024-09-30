@@ -1,0 +1,6 @@
+classes = 1
+train = data/threshold_16/train/train.txt
+valid = data/threshold_16/valid/valid.txt
+test = data/threshold_16/test/test.txt
+names = data/obj.names
+backup = backup 
