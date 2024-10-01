@@ -21,17 +21,18 @@ all_threshold_15fps.zip
     	–train: 6641 .txt and 6641 .png files
       –valid: 2034 .txt and 2034 .png files
 
-##################
+
+------------------------------------------------------------------
 PARENT FILE
 
 'Run_Metrics.py'
-##################
+------------------------------------------------------------------
 
 !! BEFORE RUNNING ANY CODE !!
 
 Organize directories as follows
 
-##################################################################
+------------------------------------------------------------------
 YOLOv4 & YOLOv7
 
 1. Clone and setup darknet: https://github.com/pjreddie/darknet
@@ -45,10 +46,10 @@ Inside of the darknet folder:
 MAKE sure all threshold_x folders are unzipped and within this directory - 'darknet/data'
 
 ***BEFORE CONTINUING***
+
 PLACE 'face_dataset-process.py' into 'darknet/data' and RUN the script
 
 This should create a train/valid/test.txt file within each train/valid/test folder of each threshold
-***********************
 
 '.weights', '.data', '.names', & '.cfg' files
 
@@ -61,22 +62,22 @@ This should create a train/valid/test.txt file within each train/valid/test fold
 7. Place all '.cfg' files INTO 'darknet/cfg'
 
 ***FINAL***
+
 8. Place 'yolov4_metrics.py' and 'yolov7_metrics.py' INSIDE 'darknet' folder
 
 MAKE SURE the parent file 'Run_Metrics.py' is NOT inside the 'darknet' folder
 It SHOULD be one directory back
-##################################################################
+------------------------------------------------------------------
 
-##################################################################
+
+------------------------------------------------------------------
 MOBLINET
 
+------------------------------------------------------------------
 
 
-##################################################################
-
-##################################################################
+------------------------------------------------------------------
 EFFICIENT-DET
 
-
-##################################################################
+------------------------------------------------------------------
 
