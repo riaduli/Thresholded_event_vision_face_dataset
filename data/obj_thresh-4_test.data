@@ -1,5 +1,0 @@
-classes = 1
-train = data/threshold_4/train/train.txt
-valid = data/threshold_4/test/test.txt
-names = data/obj.names
-backup = backup 
