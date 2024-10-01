@@ -4,22 +4,22 @@ commands = [
     {
         "threshold": "4",
         "metrics_command": "./darknet detector map data/obj_thresh-4_test.data cfg/aff-yolov4.cfg backup/aff-yolov4-4_last.weights",
-        "inference_command": "./darknet detector test data/obj_thresh-4.data cfg/aff-yolov4.cfg backup/aff-yolov4-4_last.weights data/threshold_4/test/*.png"
+        "inference_command": "./darknet detector test data/obj_thresh-4.data cfg/aff-yolov4.cfg backup/aff-yolov4-4_last.weights data/threshold_4/*.png"
     },
     {
         "threshold": "8",
         "metrics_command": "./darknet detector map dataobj_thresh-8_test.data cfg/aff-yolov4.cfg backup/aff-yolov4-8_last.weights",
-        "inference_command": "./darknet detector test data/obj_thresh-8.data cfg/aff-yolov4.cfg backup/aff-yolov4-8_last.weights data/threshold_8/test/*.png"
+        "inference_command": "./darknet detector test data/obj_thresh-8.data cfg/aff-yolov4.cfg backup/aff-yolov4-8_last.weights data/threshold_8/*.png"
     },
     {
         "threshold": "12",
         "metrics_command": "./darknet detector map data/obj_thresh-12_test.data cfg/aff-yolov4.cfg backup/aff-yolov4-12_last.weights",
-        "inference_command": "./darknet detector test data/obj_thresh-12.data cfg/aff-yolov4.cfg backup/aff-yolov4-12_last.weights data/threshold_12/test/*.png"
+        "inference_command": "./darknet detector test data/obj_thresh-12.data cfg/aff-yolov4.cfg backup/aff-yolov4-12_last.weights data/threshold_12/*.png"
     },
     {
         "threshold": "16",
         "metrics_command": "./darknet detector map data/obj_thresh-16_test.data cfg/aff-yolov4.cfg backup/aff-yolov4-16_last.weights",
-        "inference_command": "./darknet detector test data/obj_thresh-16.data cfg/aff-yolov4.cfg backup/aff-yolov4-16_last.weights data/threshold_16/test/*.png"
+        "inference_command": "./darknet detector test data/obj_thresh-16.data cfg/aff-yolov4.cfg backup/aff-yolov4-16_last.weights data/threshold_16/*.png"
     }
 ]
 
