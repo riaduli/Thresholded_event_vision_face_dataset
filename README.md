@@ -41,15 +41,15 @@ YOLOv4 & YOLOv7
 
 Inside of the darknet folder:
 
-3. Extract each zipped folder (per dataset) within 'all_threshold_15fps.zip' INTO 'darknet/data'
+3. Place each folder (per threshold) within 'sample_all_threshold_15fps' INTO 'darknet/data'
 
-MAKE sure all threshold_x folders are unzipped and within this directory - 'darknet/data'
+MAKE sure all threshold_x folders are placed and within this directory - 'darknet/data'
 
 ***BEFORE CONTINUING***
 
 PLACE 'face_dataset-process.py' into 'darknet/data' and RUN the script
 
-This should create a train/valid/test.txt file within each train/valid/test folder of each threshold
+This should create a test.txt file within each threshold folder
 
 '.weights', '.data', '.names', & '.cfg' files
 
@@ -63,10 +63,11 @@ This should create a train/valid/test.txt file within each train/valid/test fold
 
 ***FINAL***
 
-8. Place 'yolov4_metrics.py' and 'yolov7_metrics.py' INSIDE 'darknet' folder
+8. Place 'yolov4_metrics.py' and 'yolov7_metrics.py' INSIDE the 'darknet' folder
 
 MAKE SURE the parent file 'Run_Metrics.py' is NOT inside the 'darknet' folder
 It SHOULD be one directory back
+
 ------------------------------------------------------------------
 
 
