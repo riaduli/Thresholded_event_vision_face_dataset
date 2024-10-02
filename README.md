@@ -47,7 +47,7 @@ MAKE sure all threshold_x folders are placed and within this directory - 'darkne
 
 ***BEFORE CONTINUING***
 
-PLACE 'face_dataset-process.py' into 'darknet/data' and RUN the script
+PLACE 'aff-process.py' into 'darknet/data' and RUN the script
 
 This should create a test.txt file within each threshold folder
 
