@@ -22,9 +22,9 @@ all_threshold_15fps.zip
       –valid: 2034 .txt and 2034 .png files
 
 # Citation
-------------------------------------------------------------------
-
 Please consider citing our paper:
+
+------------------------------------------------------------------
 @misc{islam2024descriptorfacedetectiondataset,
       title={Descriptor: Face Detection Dataset for Programmable Threshold-Based Sparse-Vision}, 
       author={Riadul Islam and Sri Ranga Sai Krishna Tummala and Joey Mulé and Rohith Kankipati and Suraj Jalapally and Dhandeep Challagundla and Chad Howard and Ryan Robucci},
