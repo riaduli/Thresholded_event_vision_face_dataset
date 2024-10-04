@@ -10,19 +10,19 @@ os.chdir('darknet')
 commands = [
     {
         "threshold": "4",
-        "inference_command": "./darknet detector test data/obj_thresh-4.data cfg/aff-yolov7.cfg backup/aff-yolov7-4_last.weights data/threshold_4/test/*.png"
+        "inference_command": "./darknet detector test data/obj_thresh-4.data cfg/aff-yolov4.cfg backup/aff-yolov4-4_last.weights data/threshold_4/test/*.png"
     },
     {
         "threshold": "8",
-        "inference_command": "./darknet detector test data/obj_thresh-8.data cfg/aff-yolov7.cfg backup/aff-yolov7-8_last.weights data/threshold_8/test/*.png"
+        "inference_command": "./darknet detector test data/obj_thresh-8.data cfg/aff-yolov4.cfg backup/aff-yolov4-8_last.weights data/threshold_8/test/*.png"
     },
     {
         "threshold": "12",
-        "inference_command": "./darknet detector test data/obj_thresh-12.data cfg/aff-yolov7.cfg backup/aff-yolov7-12_last.weights data/threshold_12/test/*.png"
+        "inference_command": "./darknet detector test data/obj_thresh-12.data cfg/aff-yolov4.cfg backup/aff-yolov4-12_last.weights data/threshold_12/test/*.png"
     },
     {
         "threshold": "16",
-        "inference_command": "./darknet detector test data/obj_thresh-16.data cfg/aff-yolov7.cfg backup/aff-yolov7-16_last.weights data/threshold_16/test/*.png"
+        "inference_command": "./darknet detector test data/obj_thresh-16.data cfg/aff-yolov4.cfg backup/aff-yolov4-16_last.weights data/threshold_16/test/*.png"
     }
 ]
 
@@ -50,4 +50,4 @@ for entry in commands:
 # Change back to the original directory
 os.chdir(original_directory)
 
-print("Completed yolov7 process!")
+print(f"Completed yolov4 processes!")
