@@ -2,8 +2,8 @@ import subprocess
 
 def run_model_metrics(Neural_Network):
     model_scripts = {
-        "yolov4": "yolov4_metrics.py",
-        "yolov7": "yolov7_metrics.py",
+        "yolov4": "darknet/yolov4_metrics.py",
+        "yolov7": "darknet/yolov7_metrics.py",
         "EfficientDet-b0": "efficientdet_b0_metrics.py",
         "MobileNets-v1": "mobilenets_v1_metrics.py"
     }
@@ -38,4 +38,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
