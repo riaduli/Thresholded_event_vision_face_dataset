@@ -1,25 +1,28 @@
 import subprocess
+import os
+
+# Save the current working directory
+original_directory = os.getcwd()
+
+# Change to the 'darknet' directory
+os.chdir('darknet')
 
 commands = [
     {
         "threshold": "4",
-        "metrics_command": "./darknet detector map data/obj_thresh-4_test.data cfg/aff-yolov7.cfg backup/aff-yolov7-4_last.weights",
-        "inference_command": "./darknet detector test data/obj_thresh-4.data cfg/aff-yolov7.cfg backup/aff-yolov7-4_last.weights data/threshold_4/*.png"
+        "inference_command": "./darknet detector test data/obj_thresh-4.data cfg/aff-yolov7.cfg backup/aff-yolov7-4_last.weights data/threshold_4/test/*.png"
     },
     {
         "threshold": "8",
-        "metrics_command": "./darknet detector map dataobj_thresh-8_test.data cfg/aff-yolov7.cfg backup/aff-yolov7-8_last.weights",
-        "inference_command": "./darknet detector test data/obj_thresh-8.data cfg/aff-yolov7.cfg backup/aff-yolov7-8_last.weights data/threshold_8/*.png"
+        "inference_command": "./darknet detector test data/obj_thresh-8.data cfg/aff-yolov7.cfg backup/aff-yolov7-8_last.weights data/threshold_8/test/*.png"
     },
     {
         "threshold": "12",
-        "metrics_command": "./darknet detector map data/obj_thresh-12_test.data cfg/aff-yolov7.cfg backup/aff-yolov7-12_last.weights",
-        "inference_command": "./darknet detector test data/obj_thresh-12.data cfg/aff-yolov7.cfg backup/aff-yolov7-12_last.weights data/threshold_12/*.png"
+        "inference_command": "./darknet detector test data/obj_thresh-12.data cfg/aff-yolov7.cfg backup/aff-yolov7-12_last.weights data/threshold_12/test/*.png"
     },
     {
         "threshold": "16",
-        "metrics_command": "./darknet detector map data/obj_thresh-16_test.data cfg/aff-yolov7.cfg backup/aff-yolov7-16_last.weights",
-        "inference_command": "./darknet detector test data/obj_thresh-16.data cfg/aff-yolov7.cfg backup/aff-yolov7-16_last.weights data/threshold_16/*.png"
+        "inference_command": "./darknet detector test data/obj_thresh-16.data cfg/aff-yolov7.cfg backup/aff-yolov7-16_last.weights data/threshold_16/test/*.png"
     }
 ]
 
@@ -36,21 +39,15 @@ def press_any_key():
 for entry in commands:
     threshold = entry["threshold"]
     
-    # UNCOMMENT TO RECEIVE METRICS FROM EACH THRESHOLD (ENTIRE DATASET)
-    
-    # Step 1: Gather metrics
-    #print(f"Gathering metrics from threshold_{threshold}....")
-    #output = run_command(entry["metrics_command"])
-    #print(output)
-    #print("=" * 80)
-
-    # Step 2: Gather inference
+    # Step 1: Gather inference
     print(f"Gathering inference from threshold_{threshold}...")
     output = run_command(entry["inference_command"])
     print(output)
     print("=" * 80)
 
     press_any_key()
-    
-print(f"Completed yolov7 processes!")
 
+# Change back to the original directory
+os.chdir(original_directory)
+
+print("Completed yolov7 process!")
