@@ -67,7 +67,7 @@ PLACE 'aff-process.py' into 'darknet/data' and RUN the script
 
 This should create a test.txt file within each threshold folder
 
-'.weights', '.data', '.names', & '.cfg' files
+FOR THE '.weights', '.data', '.names', & '.cfg' FILES
 
 4. Place all 'aff-yolov4-X_last.weights' and 'aff-yolov7-X_last.weights' INTO 'darknet/backup'
 
