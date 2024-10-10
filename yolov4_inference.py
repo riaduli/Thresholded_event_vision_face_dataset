@@ -1,3 +1,10 @@
+'''
+Author: Joey Mulé
+Date Created: 10/3/2024
+Command: python yolov4_metrics.py || python3 yolov4_metrics.py
+Description: This script outputs an inference for each threshold using the darknet model
+'''
+
 import subprocess
 import os
 
