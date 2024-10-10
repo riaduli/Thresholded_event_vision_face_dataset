@@ -2,10 +2,10 @@ import subprocess
 
 def run_model_metrics(Neural_Network):
     model_scripts = {
-        "yolov4": "darknet/yolov4_metrics.py",
-        "yolov7": "darknet/yolov7_metrics.py",
-        "EfficientDet-b0": "efficientdet_b0_metrics.py",
-        "MobileNets-v1": "mobilenets_v1_metrics.py"
+        "Yolov4": "darknet/yolov4_inference.py",
+        "Yolov7": "darknet/yolov7_inference.py",
+        "EfficientDet-b0": "tflite_models/efficientdet.py",
+        "MobileNets-v1": "tflite_models/mobilenet.py"
     }
 
     if Neural_Network in model_scripts:
@@ -13,28 +13,27 @@ def run_model_metrics(Neural_Network):
         print(f"Running {script_to_run} for {Neural_Network} model...\n")
         
         try:
-            # Run the corresponding Python script directly in the terminal to preserve interactivity
+            # Run the corresponding Python script directly in the terminal
             subprocess.run(f"python3 {script_to_run}", shell=True, check=True)
             
         except subprocess.CalledProcessError as e:
             print(f"Error executing {script_to_run}: {e.output}")
-            return False  # Return False if there was an error
+            return False
     else:
         print("Invalid Neural Network model name. Please try again.\n")
-        return False  # Return False for invalid input
+        return False
     
-    return True  # Return True if the script ran successfully
+    return True
 
 def main():
     while True:
-        print("Please choose the neural network model to view the metrics:")
-        print("Options: yolov4, yolov7, EfficientDet-b0, MobileNets-v1")
+        print("Please choose the neural network model to view the metrics (Entry Specific):")
+        print("Options: Yolov4, Yolov7, EfficientDet-b0, MobileNets-v1")
         
         Neural_Network = input("Enter the model name: ").strip()
         
-        # Try running the model metrics script
         if run_model_metrics(Neural_Network):
-            break  # Exit the loop if the model script ran successfully
+            break
 
 if __name__ == "__main__":
     main()
