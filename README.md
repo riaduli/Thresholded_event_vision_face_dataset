@@ -56,7 +56,8 @@ Please consider citing our paper:
 ------------------------------------------------------------------
 PARENT FILE
 
-'Run_Metrics.py'
+'Run_Inference.py'
+Run this script after organizing all other model files
 ------------------------------------------------------------------
 
 !! BEFORE RUNNING ANY CODE !!
@@ -94,22 +95,18 @@ FOR THE '.weights', '.data', '.names', & '.cfg' FILES
 
 ***FINAL***
 
-8. Place 'yolov4_metrics.py' and 'yolov7_metrics.py' INSIDE the 'darknet' folder
+8. Place 'yolov4_inference.py' and 'yolov7_inference.py' INSIDE the 'darknet' folder
 
-MAKE SURE the parent file 'Run_Metrics.py' is NOT inside the 'darknet' folder
+MAKE SURE the parent file 'Run_Inference.py' is NOT inside the 'darknet' folder
 It SHOULD be one directory back
 
 ------------------------------------------------------------------
 
 
 ------------------------------------------------------------------
-MOBLINET
+MOBLINET & EFFICIENT-DET
 
-------------------------------------------------------------------
-
-
-------------------------------------------------------------------
-EFFICIENT-DET
-
+1. Place the 'tflite_models' folder inside the SAME directory as the parent script 'Run_Inference.py'
+2. Done!
 ------------------------------------------------------------------
 
