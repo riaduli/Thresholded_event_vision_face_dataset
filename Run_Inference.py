@@ -1,3 +1,10 @@
+'''
+Author: Joey Mulé
+Date Created: 10/3/2024
+Command: python Run_Inference.py || python3 Run_Inference.py
+Description: This script runs the parent script to call one model for inferencing
+'''
+
 import subprocess
 
 def run_model_metrics(Neural_Network):
