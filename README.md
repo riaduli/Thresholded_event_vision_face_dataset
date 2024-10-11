@@ -56,7 +56,7 @@ Please consider citing our paper:
 # Questions
 If you have any questions about our dataset or desire any weights of any other models, please contact Dr. Riadul Islam
 ```bibtex
-Email: riaduli@umbc.edu
+riaduli@umbc.edu
 ```
 
 
