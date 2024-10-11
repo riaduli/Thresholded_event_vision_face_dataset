@@ -42,10 +42,17 @@ file name: 105-250_png.rf.2e5cb960eecaae0cd27a8e75f649d461.png
 Please consider citing our paper:
 
 ------------------------------------------------------------------
-**Descriptor: Face Detection Dataset for Programmable Threshold-Based Sparse-Vision**  
-Riadul Islam, Sri Ranga Sai Krishna Tummala, Joey Mulé, Rohith Kankipati, Suraj Jalapally, Dhandeep Challagundla, Chad Howard, Ryan Robucci.  
-2024.  
-[https://arxiv.org/abs/2410.00368](https://arxiv.org/abs/2410.00368)
+```bibtex
+@misc{islam2024descriptorfacedetectiondataset,
+  title={Descriptor: Face Detection Dataset for Programmable Threshold-Based Sparse-Vision}, 
+  author={Riadul Islam and Sri Ranga Sai Krishna Tummala and Joey Mulé and Rohith Kankipati and Suraj Jalapally and Dhandeep Challagundla and Chad Howard and Ryan Robucci},
+  year={2024},
+  eprint={2410.00368},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2410.00368},
+}
+```
 
 
 
