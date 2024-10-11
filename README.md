@@ -109,7 +109,7 @@ It SHOULD be one directory back
 ------------------------------------------------------------------
 MOBLINET & EFFICIENT-DET
 
-1. Place the 'tflite_models' folder inside the SAME directory as the parent script 'Run_Inference.py'
+1. Place the 'efficientdet_mobilnet' folder inside the SAME directory as the parent script 'Run_Inference.py'
 2. Done!
 ------------------------------------------------------------------
 
