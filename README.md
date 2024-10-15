@@ -50,7 +50,7 @@ Please consider citing our paper:
   eprint={2410.00368},
   archivePrefix={arXiv},
   primaryClass={cs.CV},
-  url={https://arxiv.org/abs/2410.00368},
+  url={[https://arxiv.org/abs/2410.00368](https://arxiv.org/abs/2410.00368)},
 }
 
 # Questions
